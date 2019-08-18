@@ -1,0 +1,118 @@
+html,body{
+
+    margin: 0;
+    padding: 0;
+    justify-items: center;
+    /* overflow-x: hidden; */
+    font-family: 'PT Sans', sans-serif;
+    color: #777777;
+}
+
+
+#heading{
+    display: flex;
+    flex-direction: column;
+}
+
+#short_head{
+    margin-top:7vh;
+    font-size: 1.2em;
+    /* justify-self: center;
+    align-content: center; */
+    text-align: center;
+}
+
+#big_head{
+    margin-top:1vh;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#all_articles{
+    margin-top: 8vh;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#article_1{
+    display: flex;
+    flex-direction: row;
+}
+#article_desc{
+    margin-left: 1vw;
+}
+
+#article_img{
+    height:50px;
+    width: 50px;
+    background: #f2f2f2;
+}
+
+#article_2{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#article_3{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#article_4{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#article_5{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+}
+a:link{
+    color: #777777;
+    text-decoration: none;
+}
+#footer{
+    justify-self: end;
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    margin-left: 5vw;
+} 
+#email{
+    cursor: pointer;
+    margin-top: 6vh;
+}
+
+#behance{
+    cursor: pointer;
+    margin-left: 3vw;
+    margin-top: 6vh;
+}
+
+#dribbble{
+    cursor: pointer;
+    margin-left: 3vw;
+    margin-top: 6vh;
+}
+
+#linkedin{
+    cursor: pointer;
+    margin-left: 3vw;
+    margin-top: 6vh;
+}
+#twitter{
+    cursor: pointer;
+    margin-left: 3vw;
+    margin-top: 6vh;
+}
+
+#copyright{
+    margin-top: 6vh;
+    position: absolute;
+    right: 5vw;
+}

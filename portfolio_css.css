@@ -1,0 +1,210 @@
+html,body{
+
+    margin: 0;
+    padding: 0;
+    justify-items: center;
+    /* overflow-x: hidden; */
+    font-family: 'PT Sans', sans-serif;
+    color: #777777;
+}
+
+#navbar{
+    align-self: start;
+    height: 10vh;
+    width: 100%;
+    background: #f2f2f2;
+}
+
+#heading{
+    display: flex;
+    flex-direction: column;
+}
+
+#short_head{
+    margin-top:7vh;
+    font-size: 1.2em;
+    /* justify-self: center;
+    align-content: center; */
+    text-align: center;
+}
+
+#big_head{
+    margin-top:1vh;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#categories{
+    min-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 5vh;
+    border: none;
+}
+.button{
+    
+    -webkit-transition-duration: 0.4s; /* Safari */
+    margin: 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: none;
+    color: #c2c2c2;
+    padding: 13px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    background-color:white;
+}
+
+.uiux_button{
+    font-weight: 700;
+    color: #777777;
+    border: solid 2px #777777;
+}
+
+.uiux_button:hover{
+    color: white;
+    background-color: #777777
+
+}
+.poster_button{
+    border: solid 1px #c2c2c2;
+}
+.poster_button:hover{
+    color: white;
+    border-color: #777777;
+    background-color: #777777
+}
+.logo_button{
+    border: solid 1px #c2c2c2;
+}
+
+.logo_button:hover{
+    color: white;
+    border-color: #777777;
+    background-color: #777777
+}
+.photo_button{
+    border: solid 1px #c2c2c2;
+}
+.photo_button:hover{
+    color: white;
+    border-color: #777777;
+    background-color: #777777
+}
+
+#mid_content{
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5vh;
+    /* margin-left: 5vw; */
+    display: flex;
+    flex-direction: row;
+}
+
+#work_card_1{
+    margin: 17px;
+}
+
+#work_card_2{
+    margin: 17px;
+}
+
+#work_card_3{
+    margin: 17px;
+}
+
+#work_card_4{
+    margin: 17px;
+}
+#work_card_5{
+    margin: 17px;
+}
+#work_card_6{
+    margin: 17px;
+}
+#work_card_7{
+    margin: 17px;
+}
+#work_card_8{
+    margin: 17px;
+}
+
+#work_rect{
+    /* margin-right: 5vw; */
+    background: #f2f2f2;
+    height: 40vh;
+    width: 40vh;
+}
+#work_circ{
+    background: url("circ1_img.jpg");
+    background-size: cover; 
+    background-position: center;
+    margin-top: 5vh;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    /* background: #000000; */
+}
+#work_text{
+    margin-left: 4vw;
+    display: flex;
+    flex-direction: column;
+}
+#work_name{
+    margin-top: -7.5vh;
+    font-size: 1.4em;
+}
+#work_desc{
+    margin-top: -3vh;
+    /* border: 1px solid #000000; */
+    font-size: 1.2em;
+}
+a:link{
+    color: #777777;
+    text-decoration: none;
+}
+#footer{
+    justify-self: end;
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    margin-left: 5vw;
+} 
+#email{
+    cursor: pointer;
+    margin-top: 6vh;
+}
+
+#behance{
+    cursor: pointer;
+    margin-left: 3vw;
+    margin-top: 6vh;
+}
+
+#dribbble{
+    cursor: pointer;
+    margin-left: 3vw;
+    margin-top: 6vh;
+}
+
+#linkedin{
+    cursor: pointer;
+    margin-left: 3vw;
+    margin-top: 6vh;
+}
+#twitter{
+    cursor: pointer;
+    margin-left: 3vw;
+    margin-top: 6vh;
+}
+
+#copyright{
+    margin-top: 6vh;
+    position: absolute;
+    right: 5vw;
+}
