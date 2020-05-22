@@ -7,15 +7,17 @@
     <title>about - shwet</title>
     <link rel="shortcut icon" type="image/jpg" href="circ1_img.jpg">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbar.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="modal.css">
 </head>
-<body>
+<body onclick="myFunction(event)">
 
-    <!-- <div id="content"></div> -->
     
     <div class="container">
+
+        <!-- HEADER SECTION -->
              <nav>
                 <header>
                     <div class="logo"></div>
@@ -24,7 +26,9 @@
                         <li><a id="active" href="#">about me</a></li>
                         <li><a href="portfolio.html">portfolio</a></li>
                         <li><a href="articles.html">articles</a></li>
+                        <li><a href="#">projects</a></li>
                         <li><a href="#">contact</a></li>
+                        <li><a id="login-btn" href="#">login</a></li>
                     </ul>
 
                     <div class="burger">
@@ -35,6 +39,30 @@
             
                 </header>
             </nav>
+
+            <!-- LOGIN MODAL  -->
+            <section id="login-modal">
+                    <div id="modal-content">                        
+                        <!-- CLOSE BUTTON -->
+                        <div id="close-div">
+                            <span id="modal-close" onclick="closeModal()">&times;</span>
+                        </div>                        
+                        <form name="shwet-login" action="">
+                            <div id="boxes">                            
+                                <label for="username">username</label>
+                                <input id="userinput" type="text" name="username" placeholder="username">
+                                <span id="username-alert">username is incorrect</span>
+                                <label id="pass-label" for="password">password</label>
+                                <input id="userinput" type="password" name="password" placeholder="password">
+                                <span id="username-alert">password is incorrect</span>
+                            </div>
+                            <input id="submit" type="submit" for>
+                        </form>
+                    </div>
+            </section>
+
+       
+        <!-- ABOVE THE FOLD CONTENT -->
 
         <div id="top">
             <div id="top_left">
@@ -48,20 +76,21 @@
                         great visual content, i'm always in pursuit of happiness.
                     </div>
                     <div id="know_more_btn">
-                        <button>know more &#8674;</button>
+                        <button>know more
+                            <i class="fa fa-angle-right"></i>
+                        </button>
                     </div>
                 </div>
             </div>
 
             <div id="top_right">
                 <div id="top_right_content">
-                    
                     <div id="circ1"></div>
                     <div id="circ2"></div>
                     <div id="circ3"></div>
-
                 </div>
             </div>
+
         </div>
 
         <hr color="#EEEEEE">
@@ -71,40 +100,48 @@
             <div id="recent_work_title">recent works</div>
 
             <div id="mid_content">
-
+            
                 <div id="work_card_1">
                     <div id="work_rect"></div>
-                    <div id="work_circ"></div>
-                    <p id="work_name">pollo</p>
-                    <p id="work_desc">a polling & opinions app</p>
-                </div>
-
-                <div id="work_card_2">
-
-                    <div id="work_rect"></div>
-
-                        <div id=work_desc_sec>
-                            <div id="work_circ"></div>
-                            <p id="work_name">settlemint</p>
-                            <p id="work_desc">a bill splitting app</p>
-                        </div>
-                    
-                </div>
-
-                <div id="work_card_3">
-                    <div id="work_rect"></div>
-                    <div id="work_circ"></div>
-                    <p id="work_name">gen-y</p>
-                    <p id="work_desc">a technical team website</p>
-                </div>
-
-                <div id="work_card_4">
-                        <div id="work_rect"></div>
+                    <div id=work_desc_sec>
                         <div id="work_circ"></div>
-                        <p id="work_name">elaxer</p>
-                        <p id="work_desc">a social media app</p>
-                    </div>
-
+                        <div id="work_txt">
+                            <p id="work_name">settlemint</p>
+                            <p id="work_desc">a bill splitting app</p>    
+                        </div>                            
+                    </div>                    
+                </div>
+                <div id="work_card_1">
+                    <div id="work_rect"></div>
+                    <div id=work_desc_sec>
+                        <div id="work_circ"></div>
+                        <div id="work_txt">
+                            <p id="work_name">settlemint</p>
+                            <p id="work_desc">a bill splitting app</p>    
+                        </div>                            
+                    </div>                    
+                </div>
+                <div id="work_card_1">
+                    <div id="work_rect"></div>
+                    <div id=work_desc_sec>
+                        <div id="work_circ"></div>
+                        <div id="work_txt">
+                            <p id="work_name">settlemint</p>
+                            <p id="work_desc">a bill splitting app</p>    
+                        </div>                            
+                    </div>                    
+                </div>
+                <div id="work_card_1">
+                    <div id="work_rect"></div>
+                    <div id=work_desc_sec>
+                        <div id="work_circ"></div>
+                        <div id="work_txt">
+                            <p id="work_name">settlemint</p>
+                            <p id="work_desc">a bill splitting app</p>    
+                        </div>                            
+                    </div>                    
+                </div>
+    
             </div>
             
 
@@ -115,85 +152,94 @@
                 <div id="exp_skill_title">experience & skills</div>
 
                 <div id="bottom_content">
-                    <div id="experience">
 
-                        <p id="exp1_title">ui/ux design head</p>
-                        <div id="exp1"></div>
-
-                        <p id="exp2_title">ui/ux design intern</p>
-                        <div id="exp2"></div>
-
-                        <p id="exp3_title">ui/ux design intern</p>
-                        <div id="exp3"></div>
-
-                        <p id="exp4_title">graphic design intern</p>
-                        <div id="exp4"></div>
-
+                    <div id="skills">
+                        <div id="skill_card">                            
+                            <div id="skl1"></div>
+                            <p id="skl1_title">xd & figma</p>
+                        </div>
+                        <div id="skill_card">                            
+                            <div id="skl1"></div>
+                            <p id="skl1_title">xd & figma</p>
+                        </div>
+                        <div id="skill_card">                            
+                            <div id="skl1"></div>
+                            <p id="skl1_title">xd & figma</p>
+                        </div>
+                        <div id="skill_card">                            
+                            <div id="skl1"></div>
+                            <p id="skl1_title">xd & figma</p>
+                        </div>                            
                     </div>
 
-                    <img alt="shwet bitmoji" id="bitmoji" src="shwet_bitmoji.png">
-
-                    <div class="" id="skills">
-
-                            <p id="skl1_title">xd & figma</p>
-                            <div id="skl1"></div>
-    
-                            <p id="skl2_title">photoshop & illustrator</p>
-                            <div id="skl2"></div>
-    
-                            <p id="skl3_title">after effects</p>
-                            <div id="skl3"></div>
-    
-                            <p id="skl4_title">html, css & js</p>
-                            <div id="skl4"></div>
-    
-                        </div>
+                    <div id="shwet_img">
+                        <img alt="shwet bitmoji" id="bitmoji" src="shwet_bitmoji.png">
+                    </div>
+                    
+                    <div id="experience">
+                        <div id="exp_card">
+                            <p id="exp1_title">ui/ux design head</p>
+                            <div id="exp1"></div>
+                        </div>    
+                        <div id="exp_card">
+                            <p id="exp1_title">ui/ux design head</p>
+                            <div id="exp1"></div>
+                        </div>    
+                        <div id="exp_card">
+                            <p id="exp1_title">ui/ux design head</p>
+                            <div id="exp1"></div>
+                        </div>    
+                        <div id="exp_card">
+                            <p id="exp1_title">ui/ux design head</p>
+                            <div id="exp1"></div>
+                        </div>    
+                    </div>
 
                 </div>
+
+              
         </div>
     </div>
 
     <hr color="#eeeeee">
 
     <footer id="footer">    
-        <P id="email"><a href="mailto:hi@shwetmishra.in?subject=Hello%20Shwet">hi@shwetmishra.in</a></P>
-        <p id="behance"><a target="_blank" href="https://www.be.net/shwetmishra">behance</a></p>
-        <p id="dribbble"><a target="_blank" href="https://www.dribbble.com/shwetmishra">dribbble</a></p>
-        <p id="linkedin"><a target="_blank" href="https://www.linkedin.com/in/shwetmishra">linkedin</a></p>
-        <p id="twitter"><a target="_blank" href="https://www.twitter.com/geekyshwet">twitter</a></p>
-        <p id="copyright">website design & content © 2019 shwet mishra </p>
+            <P id="email"><a href="mailto:hi@shwetmishra.in?subject=Hello%20Shwet">hi@shwetmishra.in</a></P>    
+            <p id="behance"><a target="_blank" href="https://www.be.net/shwetmishra">behance</a></p>
+            <p id="dribbble"><a target="_blank" href="https://www.dribbble.com/shwetmishra">dribbble</a></p>
+            <p id="linkedin"><a target="_blank" href="https://www.linkedin.com/in/shwetmishra">linkedin</a></p>
+            <p id="twitter"><a target="_blank" href="https://www.twitter.com/geekyshwet">twitter</a></p>
+            <p id="copyright">website design & content © 2019 shwet mishra </p>
+    </footer>
+
+
+    <!-- MOBILE FOOTER DESIGN -->
+
+    <footer id="footer_mob">    
+        <div id="foot_1">
+            <P><a href="mailto:hi@shwetmishra.in?subject=Hello%20Shwet">hi@shwetmishra.in</a></P>    
+        </div>
+        <div id="foot_2">
+            <p><a target="_blank" href="https://www.be.net/shwetmishra">behance</a></p>
+            <p><a target="_blank" href="https://www.dribbble.com/shwetmishra">dribbble</a></p>
+        </div>
+        <div id="foot_3">
+            <p><a target="_blank" href="https://www.linkedin.com/in/shwetmishra">linkedin</a></p>
+            <p><a target="_blank" href="https://www.twitter.com/geekyshwet">twitter</a></p>
+        </div>
+        <div id="foot_4">
+            <p>website design & content</p>
+            <p>© 2019 shwet mishra </p>
+        </div>
     </footer>
 
     
     <!-- <button class = "lund" style = "position:fixed; top:0;" onclick="foo()">Click</button> -->
 
-<script src="navbar.js"></script>
+
+    <script type="text/javascript" src="custom.js"></script>
+
 </body>
 
-<script type="text/javascript" src="custom.js"></script>
-<!-- <script type="text/javascript" src="jquery.js"></script> -->
-<!-- <script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script> -->
-<!-- <script>
-    // function foo(){
-    //     alert(document.documentElement.scrollTop);
-    // }
 
-    // function foo(){
-    //     document.getElementsByClassName("lund")[0].style.animationPlayState = "running";
-    // }
-    //     alert("3baar");
-
-
-
-    function scrolling(){
-        if(document.documentElement.scrollTop >= 716){
-            document.getElementById("skl1_title").style.animationPlayState = "running";
-        }
-    }
-
-   
-</script> -->
 </html>
