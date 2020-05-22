@@ -1,0 +1,67 @@
+#login-modal{
+    z-index: 2000;
+    height: 100%;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    color: #777777;
+    font-size: 1.4rem;
+}
+#modal-content{
+
+    height: 340px;
+    width: 340px;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+#close-div{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 40px;
+}
+#modal-close{
+    font-size: 2rem;
+    font-weight: bold;
+    width: auto;
+    cursor: pointer;
+}
+
+::placeholder{
+    font-size: 1.2rem;
+}
+
+#boxes{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    /* border: 2px solid red; */
+}
+
+#boxes span{
+    font-size: 0.8rem;
+}
+
+#username-alert{
+    display: block;
+    color: red;
+}
+#userinput{
+    padding: 10px;
+    width: 250px;
+    margin-top: 10px;
+}
+#pass-label{
+    margin-top: 20px;
+}
+#submit{
+    width: 275px;
+    height: 35px;
+    cursor: pointer;
+}
