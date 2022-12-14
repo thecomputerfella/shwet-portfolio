@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,56 +13,103 @@
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="modal.css">
 </head>
+
 <body onclick="myFunction(event)">
 
-    
+
     <div class="container">
 
         <!-- HEADER SECTION -->
-             <nav>
-                <header>
-                    <div class="logo"></div>
+        <nav>
+            <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <header>
 
-                    <ul class="nav_links">
-                        <li><a id="active" href="#">about me</a></li>
-                        <li><a href="portfolio.html">portfolio</a></li>
-                        <li><a href="articles.html">articles</a></li>
-                        <li><a href="#">projects</a></li>
-                        <li><a href="#">contact</a></li>
-                        <li><a id="login-btn" href="#">login</a></li>
-                    </ul>
+                <div class="logo"></div>
 
-                    <div class="burger">
-                        <div class="line1"></div>
-                        <div class="line2"></div>
-                        <div class="line3"></div>
+                <ul class="nav_links">
+                    <li><a id="active" href="#">about me</a></li>
+                    <li><a href="portfolio.html">portfolio</a></li>
+                    <li><a href="articles.html">articles</a></li>
+                    <li><a href="#">projects</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a id="login-btn" href="#">login</a></li>
+                </ul>
+
+
+
+            </header>
+        </nav>
+
+        <!-- LOGIN MODAL  -->
+        <section id="login-modal">
+            <div id="modal-content">
+                <!-- CLOSE BUTTON -->
+                <div id="close-div">
+                    <span id="modal-close" onclick="closeModal()">&times;</span>
+                </div>
+                <form name="shwet-login" action="dashboard.php" onsubmit="return fvalidation()">
+                    <div id="boxes">
+                        <label for="username">username</label>
+                        <input id="userinput" type="text" name="username" placeholder="username">
+                        <span id="username-alert"></span>
+
+                        <label id="pass-label" for="password">password</label>
+                        <input id="userinput" type="password" name="password" placeholder="password">
+                        <span id="password-alert"></span>
                     </div>
-            
-                </header>
-            </nav>
+                    <input id="submit" type="submit" value="Login">
+                    <div id="signup-btn">Signup?</div>
+                </form>
+            </div>
+        </section>
 
-            <!-- LOGIN MODAL  -->
-            <section id="login-modal">
-                    <div id="modal-content">                        
-                        <!-- CLOSE BUTTON -->
-                        <div id="close-div">
-                            <span id="modal-close" onclick="closeModal()">&times;</span>
-                        </div>                        
-                        <form name="shwet-login" action="">
-                            <div id="boxes">                            
-                                <label for="username">username</label>
-                                <input id="userinput" type="text" name="username" placeholder="username">
-                                <span id="username-alert">username is incorrect</span>
-                                <label id="pass-label" for="password">password</label>
-                                <input id="userinput" type="password" name="password" placeholder="password">
-                                <span id="username-alert">password is incorrect</span>
-                            </div>
-                            <input id="submit" type="submit" for>
-                        </form>
+        <!-- SIGNUP MODAL -->
+        <section id="signup-modal">
+            <div id="signup-modal-content">
+                <!-- CLOSE BUTTON -->
+                <div id="close-div">
+                    <span id="modal-close" onclick="closeModal()">&times;</span>
+                </div>
+                <form name="shwet-signup" onsubmit="return signupSuccess()">
+                    <div id="boxes">
+                        <label for="username">Full Name</label>
+                        <input id="userinput" type="text" name="username" placeholder="Fullname">
+                        <span id="name-alert"></span>
+
+                        <label id="pass-label">Username</label>
+                        <input id="userinput" type="text" name="username" placeholder="Username">
+                        <span id="username-alert"></span>
+
+                        <label id="pass-label">Email</label>
+                        <input id="userinput" type="text" name="username" placeholder="Email address">
+                        <span id="email-alert"></span>
+
+                        <label id="pass-label">Password</label>
+                        <input id="userinput" type="password" name="password" placeholder="Password">
+                        <span id="password-alert"></span>
                     </div>
-            </section>
+                    <input id="submit" type="submit" value="Sign Up">
+                    <div id="loginbtn">Login?</div>
+                </form>
+            </div>
+        </section>
 
-       
+        <!-- SUCCESSFULLY SIGN-UP -->
+        <section id="success-modal">
+            <div id="success-modal-content">
+                <!-- CLOSE BUTTON -->
+                <div id="close-div">
+                    <span id="modal-close" onclick="closeModal()">&times;</span>
+                </div>
+                <p>Successfully Signed Up :)</p>
+                <div onclick="openLogin()" id="loginbtn">Login?</div>
+            </div>
+        </section>
+
         <!-- ABOVE THE FOLD CONTENT -->
 
         <div id="top">
@@ -94,134 +142,138 @@
         </div>
 
         <hr color="#EEEEEE">
-        
+
         <div id="mid">
 
             <div id="recent_work_title">recent works</div>
 
             <div id="mid_content">
-            
+
                 <div id="work_card_1">
-                    <div id="work_rect"></div>
+                    <div id="work_rect1"></div>
                     <div id=work_desc_sec>
-                        <div id="work_circ"></div>
+                        <div id="work_circ1"></div>
                         <div id="work_txt">
                             <p id="work_name">settlemint</p>
-                            <p id="work_desc">a bill splitting app</p>    
-                        </div>                            
-                    </div>                    
+                            <p id="work_desc">a bill splitting app</p>
+                        </div>
+                    </div>
                 </div>
                 <div id="work_card_1">
-                    <div id="work_rect"></div>
+                    <div id="work_rect2"></div>
                     <div id=work_desc_sec>
-                        <div id="work_circ"></div>
+                        <div id="work_circ2"></div>
                         <div id="work_txt">
-                            <p id="work_name">settlemint</p>
-                            <p id="work_desc">a bill splitting app</p>    
-                        </div>                            
-                    </div>                    
+                            <p id="work_name">pollo</p>
+                            <p id="work_desc">a polls & opinions app</p>
+                        </div>
+                    </div>
                 </div>
                 <div id="work_card_1">
-                    <div id="work_rect"></div>
+                    <div id="work_rect3"></div>
                     <div id=work_desc_sec>
-                        <div id="work_circ"></div>
+                        <div id="work_circ3"></div>
                         <div id="work_txt">
-                            <p id="work_name">settlemint</p>
-                            <p id="work_desc">a bill splitting app</p>    
-                        </div>                            
-                    </div>                    
+                            <p id="work_name">encap</p>
+                            <p id="work_desc">a short article reader app</p>
+                        </div>
+                    </div>
                 </div>
                 <div id="work_card_1">
-                    <div id="work_rect"></div>
+                    <div id="work_rect3"></div>
                     <div id=work_desc_sec>
-                        <div id="work_circ"></div>
+                        <div id="work_circ3"></div>
                         <div id="work_txt">
-                            <p id="work_name">settlemint</p>
-                            <p id="work_desc">a bill splitting app</p>    
-                        </div>                            
-                    </div>                    
+                            <p id="work_name">gen-y</p>
+                            <p id="work_desc">a tech team website</p>
+                        </div>
+                    </div>
                 </div>
-    
+
             </div>
-            
+
 
         </div>
 
         <div id="bottom">
 
-                <div id="exp_skill_title">experience & skills</div>
+            <div id="exp_skill_title">experience & skills</div>
 
-                <div id="bottom_content">
+            <div id="bottom_content">
 
-                    <div id="skills">
-                        <div id="skill_card">                            
-                            <div id="skl1"></div>
-                            <p id="skl1_title">xd & figma</p>
-                        </div>
-                        <div id="skill_card">                            
-                            <div id="skl1"></div>
-                            <p id="skl1_title">xd & figma</p>
-                        </div>
-                        <div id="skill_card">                            
-                            <div id="skl1"></div>
-                            <p id="skl1_title">xd & figma</p>
-                        </div>
-                        <div id="skill_card">                            
-                            <div id="skl1"></div>
-                            <p id="skl1_title">xd & figma</p>
-                        </div>                            
+                <div id="skills">
+                    <div id="skill_card">
+                        <div id="skl1"></div>
+                        <p id="skl1_title">adobe xd & figma</p>
                     </div>
-
-                    <div id="shwet_img">
-                        <img alt="shwet bitmoji" id="bitmoji" src="shwet_bitmoji.png">
+                    <div id="skill_card">
+                        <div id="skl1"></div>
+                        <p id="skl1_title">adobe photoshop</p>
                     </div>
-                    
-                    <div id="experience">
-                        <div id="exp_card">
-                            <p id="exp1_title">ui/ux design head</p>
-                            <div id="exp1"></div>
-                        </div>    
-                        <div id="exp_card">
-                            <p id="exp1_title">ui/ux design head</p>
-                            <div id="exp1"></div>
-                        </div>    
-                        <div id="exp_card">
-                            <p id="exp1_title">ui/ux design head</p>
-                            <div id="exp1"></div>
-                        </div>    
-                        <div id="exp_card">
-                            <p id="exp1_title">ui/ux design head</p>
-                            <div id="exp1"></div>
-                        </div>    
+                    <div id="skill_card">
+                        <div id="skl1"></div>
+                        <p id="skl1_title">adobe illustrator</p>
                     </div>
-
+                    <div id="skill_card">
+                        <div id="skl1"></div>
+                        <p id="skl1_title">adobe after effects</p>
+                    </div>
                 </div>
 
-              
+                <div id="shwet_img">
+                    <img alt="shwet bitmoji" id="bitmoji" src="shwet_bitmoji.png">
+                </div>
+
+                <div id="experience">
+                    <div id="exp_card">
+                        <p id="exp1_title">tech intern @ amex</p>
+                        <div id="exp1"></div>
+                    </div>
+                    <div id="exp_card">
+                        <p id="exp1_title">design head @ team gen-y</p>
+                        <div id="exp1"></div>
+                    </div>
+                    <div id="exp_card">
+                        <p id="exp1_title">ui/ux design intern @ pvr</p>
+                        <div id="exp1"></div>
+                    </div>
+                    <div id="exp_card">
+                        <p id="exp1_title">ui/ux design intern @ sagaci</p>
+                        <div id="exp1"></div>
+                    </div>
+                </div>
+
+            </div>
+
+
         </div>
     </div>
 
     <hr color="#eeeeee">
 
-    <footer id="footer">    
-            <P id="email"><a href="mailto:hi@shwetmishra.in?subject=Hello%20Shwet">hi@shwetmishra.in</a></P>    
-            <p id="behance"><a target="_blank" href="https://www.be.net/shwetmishra">behance</a></p>
-            <p id="dribbble"><a target="_blank" href="https://www.dribbble.com/shwetmishra">dribbble</a></p>
-            <p id="linkedin"><a target="_blank" href="https://www.linkedin.com/in/shwetmishra">linkedin</a></p>
-            <p id="twitter"><a target="_blank" href="https://www.twitter.com/geekyshwet">twitter</a></p>
-            <p id="copyright">website design & content © 2019 shwet mishra </p>
+    <footer id="footer">
+        <P id="email"><a href="mailto:hi@shwetmishra.in?subject=Hello%20Shwet">hi@shwetmishra.in</a></P>
+        <p id="behance"><a target="_blank" href="https://www.be.net/shwetmishra">behance</a></p>
+        <p id="dribbble"><a target="_blank" href="https://www.dribbble.com/shwetmishra">dribbble</a></p>
+        <p id="linkedin"><a target="_blank" href="https://www.linkedin.com/in/shwetmishra">linkedin</a></p>
+        <p id="twitter"><a target="_blank" href="https://www.twitter.com/geekyshwet">twitter</a></p>
+        <p id="copyright">website design & content © 2019 shwet mishra </p>
     </footer>
 
 
     <!-- MOBILE FOOTER DESIGN -->
 
-    <footer id="footer_mob">    
+    <footer id="footer_mob">
         <div id="foot_1">
-            <P><a href="mailto:hi@shwetmishra.in?subject=Hello%20Shwet">hi@shwetmishra.in</a></P>    
+            <P><a href="mailto:hi@shwetmishra.in?subject=Hello%20Shwet">hi@shwetmishra.in</a></P>
         </div>
         <div id="foot_2">
-            <p><a target="_blank" href="https://www.be.net/shwetmishra">behance</a></p>
-            <p><a target="_blank" href="https://www.dribbble.com/shwetmishra">dribbble</a></p>
+            <div>
+                <p><a target="_blank" href="https://www.be.net/shwetmishra">behance</a></p>
+            </div>
+            <div>
+                <p><a target="_blank" href="https://www.dribbble.com/shwetmishra">dribbble</a></p>
+            </div>
         </div>
         <div id="foot_3">
             <p><a target="_blank" href="https://www.linkedin.com/in/shwetmishra">linkedin</a></p>
@@ -233,11 +285,34 @@
         </div>
     </footer>
 
-    
+
     <!-- <button class = "lund" style = "position:fixed; top:0;" onclick="foo()">Click</button> -->
 
 
     <script type="text/javascript" src="custom.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyBO6mzGc9ditYQTLtAyWRcL9Cg5MKT9TMA",
+            authDomain: "portfolio-b55af.firebaseapp.com",
+            projectId: "portfolio-b55af",
+            storageBucket: "portfolio-b55af.appspot.com",
+            messagingSenderId: "622988650048",
+            appId: "1:622988650048:web:adfa1405596ca5dfcde1a5",
+            measurementId: "G-MBP64C3KRD"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
 
 </body>
 

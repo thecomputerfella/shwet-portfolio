@@ -11,6 +11,7 @@ header{
     z-index: 1000;
 }
 .logo{
+    position: absolute;
     background-image: url("logo.png");
     background-size: cover;
     margin-left: 80px;
@@ -21,12 +22,6 @@ header{
     background-color: #eeeeee;
 }
 
-@media only screen and (max-width: 600px) {
-    .logo{
-        margin-left: 40px;
-    }
-}
-
 #active{
     font-weight: 700;
 }
@@ -35,34 +30,80 @@ header{
     display: flex;
     padding:0;
     font-size: 1.4em;
+    margin-left: 200px;
     /* border: 2px solid red; */
 
 }
 .nav_links a{
     /* border: 1px solid black; */
-    text-decoration: none;
+    /* text-decoration: none; */
     margin-right: 30px;
 }
 
 .nav_links li{
     list-style: none;
 }
-.burger{
-    position: absolute;
-    right: 0px;
-    cursor: pointer;
-    display: none;
-}
-.burger div{
-    
-    width: 25px;
-    height: 3px;
-    background: #777777;
-    margin: 5px;
-}
 
 .nav-active{
     transform: translateX(0%);
+
+    
 }
 
 
+@media screen and (max-width: 905px){
+
+
+    .burger{
+        top:40px;
+        right: 40px;
+        position: absolute;
+        z-index: 100000;
+    }
+    .burger div{
+        width: 25px;
+        height: 3px;
+        background: #777777;
+        margin: 5px;
+    }
+
+    .logo{
+        display: none;
+    }    
+
+    .nav_links a{
+        color: white;
+        display: flex;
+        padding: 20px;
+        
+        
+    }
+
+    .nav_links{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4em;
+        margin-left: 200px;
+        /* border: 2px solid red; */
+    
+    }
+    
+    header{
+        border: 2px solid red;
+        background: #777777;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        display: none;
+    }
+
+
+    
+
+
+    
+
+}

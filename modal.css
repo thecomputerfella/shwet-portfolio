@@ -10,9 +10,53 @@
     color: #777777;
     font-size: 1.4rem;
 }
+#signup-modal{
+    z-index: 2000;
+    height: 100%;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    color: #777777;
+    font-size: 1.4rem;
+}
+#success-modal{
+    z-index: 2000;
+    height: 100%;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    color: #777777;
+    font-size: 1.4rem;
+}
 #modal-content{
 
-    height: 340px;
+    height: 360px;
+    width: 340px;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+#signup-modal-content{
+
+    height: 540px;
+    width: 340px;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+#success-modal-content{
+
+    height: 200px;
     width: 340px;
     background-color:white;
     display: flex;
@@ -52,6 +96,10 @@
     display: block;
     color: red;
 }
+#password-alert{
+    display: block;
+    color: red;
+}
 #userinput{
     padding: 10px;
     width: 250px;
@@ -63,5 +111,19 @@
 #submit{
     width: 275px;
     height: 35px;
+    cursor: pointer;
+}
+#signup-btn{
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: darkslategray;
+    font-weight: 800;
+    cursor: pointer;
+}
+#loginbtn{
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: darkslategray;
+    font-weight: 800;
     cursor: pointer;
 }

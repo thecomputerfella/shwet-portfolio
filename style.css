@@ -4,15 +4,12 @@
     padding: 0;
     margin: 0;
     overflow-x: hidden; 
-    /* grid-template-rows: auto;  */
-    /* justify-items: center; */
-    /* grid-template-columns: repeat(4,auto);  */
 }
 body{
     /* display: flex; */
     display: block;
     flex-direction: column;
-    min-width: 360px;
+    min-width: 375px;
 }
 .container{
     width: 100%;
@@ -28,7 +25,6 @@ body{
     justify-content: space-between;
     padding-left: 80px;
     padding-right: 80px;
-
     height: 100vh;
 
 }
@@ -67,7 +63,8 @@ body{
 
 
 #top_right{
-    height: auto;
+    position: relative;
+    /* height: auto; */
 }
 #top_right_content{
     display: flex;
@@ -80,8 +77,8 @@ body{
     
     border-radius: 50%;
     margin-top: 360px;rgin-top: 360px;
-    height: 200px;
-    width: 200px;
+    min-height: 200px;
+    min-width: 200px;
 
     /* border: 2px solid springgreen; */
 }
@@ -96,8 +93,8 @@ body{
 
     min-width: 80px;
     border-radius: 50%;
-    height: 100px;
-    width: 100px;
+    min-height: 100px;
+    min-width: 100px;
 
     /* border: 2px solid purple; */
 }
@@ -112,8 +109,8 @@ body{
 
     
     border-radius: 50%;
-    height: 350px;
-    width: 350px;
+    min-height: 350px;
+    min-width: 350px;
 
     /* border: 2px solid red; */
 }
@@ -148,18 +145,68 @@ body{
     margin-top: 1.5rem;
     display: flex;
 }
-#work_rect{
+#work_rect1{
     /* margin-right: 5vw; */
     background: #f2f2f2;
     height: 18rem;
     width: 18rem;
+    background-image: url("imgs/settlemint-img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    border: 2px solid #d4d4d4;
 }
-#work_circ{
-    background: url("circ1_img.jpg");
+#work_rect2{
+    /* margin-right: 5vw; */
+    background: #f2f2f2;
+    height: 18rem;
+    width: 18rem;
+    background-image: url("imgs/pollo-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    border: 2px solid #d4d4d4;
+}
+#work_rect3{
+    /* margin-right: 5vw; */
+    background: #f2f2f2;
+    height: 18rem;
+    width: 18rem;
+    background-image: url("imgs/encap-img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    border: 2px solid #d4d4d4;
+}
+
+
+#work_circ1{
+    background: url("imgs/settlemint-logo.png");
     background-size: cover; 
     background-position: center;
     height: 40px;
     width: 40px;
+    border-radius: 50%;
+    border: 2px solid #d4d4d4;
+    /* background: #000000; */
+}
+#work_circ2{
+    background: url("imgs/pollo-logo.png");
+    background-size: cover; 
+    background-position: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid #d4d4d4;
+    /* background: #000000; */
+}
+#work_circ3{
+    background: url("imgs/encap-logo.png");
+    background-size: cover; 
+    background-position: center;
+    height: 40px;
+    width: 40px;
+    border: 2px solid #d4d4d4;
     border-radius: 50%;
     /* background: #000000; */
 }
@@ -207,7 +254,7 @@ body{
 #experience{
     display: flex;
     flex-direction: column;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     width: 20rem;
 }
 
@@ -247,7 +294,7 @@ body{
 #skills{
     display: flex;
     flex-direction: column;
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     width: 20rem;
 }
 
@@ -334,7 +381,7 @@ a:link{
     justify-content: center;
   }
 
-  #work_rect{
+  #work_rect1{
     height: 21rem;
     width: 21rem;
 }
@@ -358,17 +405,14 @@ a:link{
 
 #top{
     padding-left: 40px;
-    padding-right: 40px !important;
+    padding-right: 40px;
 }
 
 #top_left{
-    
+    width: 100%;
     text-align: center;
+    margin-top: -100px;
     /* border: 2px solid red; */
-}
-
-#top_left_content{
-    margin-top: -80px;
 }
 
 #top_left h2{
@@ -382,16 +426,15 @@ a:link{
 }
 
 #top_right{
-    margin-right: 0px;
-    /* border: 2px solid red; */
-    display: flex;
+    margin-top: 50px;
     width: 100%;
 }
 #top_right_content{
-    margin-right: 0px;
-    justify-content: unset;
-    width: 100%;
-    margin-bottom: -60px !important;
+    /* border: 2px solid red; */
+    margin-top: 0px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
 }
 
 #circ1{
@@ -402,8 +445,8 @@ a:link{
     border-radius: 20%;
     margin-top: 150px;
     margin-left: 5px;
-    height: 100px;
-    width: 100px;
+    min-height: 90px;
+    min-width: 90px;
 
     /* border: 2px solid springgreen; */
 }
@@ -416,8 +459,8 @@ a:link{
     border-radius: 20%;
     margin-top: -25px;
     margin-left: -30px;
-    height: 80px;
-    width: 80px;
+    min-height: 70px;
+    min-width: 70px;
 
     transform: scale(0.8,0.8);
 
@@ -426,18 +469,17 @@ a:link{
 
 
 #circ3{
+    background: url("circ3.png");
     margin-top: 100px;
     margin-left: 10px;
 
-    background: url("circ3.png");
     background-size: cover;
     /* background-position: center; */
 
     border-radius: 1px;
-    height: 150px;
-    width: 150px;
+    min-height: 130px;
+    min-width: 130px;
     transform: scale(1.2,1.2);
-    /* border: 2px solid red; */
 }
 
 
@@ -463,14 +505,16 @@ a:link{
 }
 #foot_2{
     display: flex;
-    width: 100%;-
     margin-top: 25px;
-}
-#foot_3{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin-top: 25px;
+}
+#foot_3{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    width: 100%;
 }
 #foot_4{
     display: block;
