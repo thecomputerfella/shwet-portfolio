@@ -59,16 +59,18 @@ body{
 .card-cta{
     font-weight: lighter;
     width: 11.3em;
+    /* height: auto; */
     margin-top: 1.5em;
     font-size: 1em;
     background: none;
-    padding: 0.8em;
+    padding: 0.5em;
     padding-left: 2em;
     padding-right: 2em;
     border-radius: 5em;
     border: 1px solid white;
     display: flex;
     align-items: center;
+    justify-content: center;    
 }
 .card-cta:hover{
     background-color: #4F5AD8;
@@ -80,12 +82,12 @@ body{
 
 .cards-list{
     /* height: 30em; */
-    min-width: 75vw;
-    margin-top: 5em;
-    /* border: 2px solid red; */
     display: flex; 
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    /* width: 70em; */
+    margin-top: 3em;
+    /* border: 2px solid red; */
 }
 .card-container{
     border-radius: 1em;
@@ -101,6 +103,7 @@ body{
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2.2px);
     -webkit-backdrop-filter: blur(2.2px);
+    margin: 2em;
     }
 .card-img{
     margin-top: 1em;
@@ -133,7 +136,11 @@ body{
 }
 .project-cards{
     /* to overflow the main-cta button shadow effect on hover */
-    overflow: visible;
+    /* overflow: visible; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
 }
 .project-card{
     /* border: 2px solid slateblue; */
@@ -141,7 +148,8 @@ body{
     width: 55em;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 6em;
+    flex-wrap: wrap;
+    margin-bottom: 3em;
     background: rgba(255, 255, 255, 0.11);
     backdrop-filter: blur(2.2px);
     -webkit-backdrop-filter: blur(2.2px);
@@ -188,6 +196,17 @@ body{
     background-size: 170%;
     border-radius: 1em;
 }
+.project-img2{
+    /* border: 2px solid aqua; */
+    width: 20em;
+    height: 12em;
+    background-image: url(./v2Imgs/behance-img.png);
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 170%;
+    border-radius: 1em;
+}
 .linkedin{
     margin-top: 2em;
     display:flex;
@@ -224,3 +243,26 @@ footer{
 .location div{
     margin-left: 1em;
 }
+
+@media only screen and (max-width: 810px) {
+    div.project-card{
+        width: 20em;
+    }
+    div.cards-list{
+        justify-content: center;
+    }
+    div.card-container{
+        width: 22em;   
+        height: auto;        
+    }
+    div.project-details{
+        width: auto;
+    }
+    button.card-cta{
+        width: 100%;
+        justify-content: center;
+    }
+    div.project-img1, div.project-img2{
+        margin-top: 2em;
+    }
+  }
