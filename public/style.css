@@ -1,5 +1,5 @@
 *{     
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Figtree', sans-serif;
     color: white;
     padding: 0;
     margin: 0;
@@ -209,6 +209,17 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: 170%;
+    border-radius: 1em;
+}
+.project-img3{
+    /* border: 2px solid aqua; */
+    width: 20em;
+    height: 12em;
+    background-image: url(./v2Imgs/workre.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    /* background-size: 170%; */
     border-radius: 1em;
 }
 .linkedin{
