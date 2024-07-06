@@ -14,15 +14,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="navbar.css"> -->
+    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="modal.css">
     <script type="text/javascript" src="custom.js"></script>
 </head>
 
 <body>
 
+    <!-- HEADER SECTION -->
+    <nav>
+        <header>
+            <ul class="nav_links">
+                <li><a href="#my-works">my work</a></li>
+                <li><a href="#">my timeline</a></li>
+                <li><a href="#blogs">blogs</a></li>
+                <li><a href="#contact">contact me</a></li>
+            </ul>
+        </header>
+    </nav>
+
     <div class="container">
-        
+
         <!--VIDEO POPUP -->
         <section id="login-modal">
             <div id="modal-content">
@@ -139,10 +151,34 @@
 
         </section>
 
+
+        <!-- BLOGS SECTION -->
+        <section id="blogs" style="text-align: center; margin-top: 4em;">
+            <p style="font-size: 4em; font-weight: 750; letter-spacing: -0.050em;">some stuff i wrote</p>
+            <div class="cards-list">
+                <div class="card-container">
+                    <p style="font-weight: lighter; text-align: left;">freelancing guide for college students</p>
+                    <div class="blog-card-img"></div>
+                    <div class="card-buttons">
+                        <a style="text-decoration: none; overflow: visible;" target="_blank" href="https://medium.com/gen-y/freelancing-guide-for-college-students-3e3b6b9442f3">
+                            <button class="card-cta">read on medium<i style="margin-left: 0.5em;" data-feather="arrow-right"></i></button>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <p style="font-weight: lighter;text-align: left">pro Hackathon Tips for Designers hackathons</p>
+                    <div class="blog-card-img2"></div>
+                    <a style="text-decoration: none; overflow: visible;" target="_blank" href="https://medium.com/gen-y/hackathon-tips-for-designers-ace-the-race-44872b14bb83">
+                        <button class="card-cta">read on medium<i style="margin-left: 0.5em;" data-feather="arrow-right"></i></button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
         <!-- LET'S TALK SECTION -->
     
-        <section style="text-align: center; margin-top: 5em; display: flex; flex-direction: column; align-items: center;">
-            <p style="font-size: 4em; font-weight: 750; letter-spacing: -0.050em;">let's talk.</p>
+        <section id="contact" style="text-align: center; margin-top: 5em; display: flex; flex-direction: column; align-items: center;">
+            <p style="font-size: 4em; font-weight: 750; letter-spacing: -0.050em;">let's talk</p>
             <p style="text-align: center; font-weight:300; color: #D0D0D0; margin-top: 0.6em;">
                 message me on linkedin, always up for discussing projects & opportunities
             </p>

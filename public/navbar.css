@@ -1,14 +1,28 @@
 header{
-    position: absolute;
     position: fixed;
+    /* margin-left: 40vw; */
+    /* margin-left: -50vw;
+    margin-right: -50vw; */
+    /* margin-right: auto;
+    margin-left: auto; */
     display: flex;
     align-items: center;
-    min-height: 6rem;
-    border-bottom: 2px solid #eeeeee;
-    background-color: white;
+    justify-content: center;
+    min-height: 5rem;
+    /* background-color: white; */
     width: 100%;
+    /* width: 100vw    ; */
     /* border: purple 2px solid; */
-    z-index: 1000;
+    z-index: 1000; 
+}
+header.scrolled{
+    border-bottom: 0.5px solid #eeeeee29;
+    
+    /* From https://css.glass */
+    background: rgba(62, 62, 62, 0.434);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(2.2px);
 }
 .logo{
     position: absolute;
@@ -21,7 +35,9 @@ header{
     border-radius: 50%;
     background-color: #eeeeee;
 }
-
+nav{
+    /* border: 2px solid aqua; */
+}
 #active{
     font-weight: 700;
 }
@@ -29,14 +45,13 @@ header{
 .nav_links{
     display: flex;
     padding:0;
-    font-size: 1.4em;
-    margin-left: 200px;
+    font-size: 1.1em;
+    /* margin-left: 200px; */
     /* border: 2px solid red; */
-
 }
 .nav_links a{
     /* border: 1px solid black; */
-    /* text-decoration: none; */
+    text-decoration: none;
     margin-right: 30px;
 }
 
@@ -78,7 +93,6 @@ header{
         
         
     }
-
     .nav_links{
         
         display: flex;
@@ -99,11 +113,5 @@ header{
         position: fixed;
         display: none;
     }
-
-
-    
-
-
-    
 
 }

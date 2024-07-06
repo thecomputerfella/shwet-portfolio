@@ -119,6 +119,26 @@ body{
     background-position: center;
     border-radius: 1em;
 }
+.blog-card-img{
+    margin-top: 1em;
+    /* border: 2px solid red; */
+    height: 12em;
+    background-image: url(https://miro.medium.com/v2/resize:fit:1400/format:webp/1*oUyjjyul0WTbnD6MhYLYdg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 1em;
+}
+.blog-card-img2{
+    margin-top: 1em;
+    /* border: 2px solid red; */
+    height: 12em;
+    background-image: url(https://miro.medium.com/v2/resize:fit:1400/format:webp/1*dwabccBe0FgIIyClZir-2A.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 1em;
+}
 .card-img2{
     margin-top: 1em;
     /* border: 2px solid red; */
