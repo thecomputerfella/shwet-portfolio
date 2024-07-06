@@ -35,14 +35,16 @@
     font-size: 1.4rem;
 }
 #modal-content{
-
-    height: 360px;
-    width: 340px;
+    /* height: 360px;
+    width: 340px; */
+    height: fit-content;
+    width: fit-content;
     background-color:white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    /* padding: 20px;
+    padding: 0px 20px ; */
 }
 #signup-modal-content{
 
@@ -71,10 +73,11 @@
     margin-right: 40px;
 }
 #modal-close{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     width: auto;
     cursor: pointer;
+    color: black;
 }
 
 ::placeholder{
