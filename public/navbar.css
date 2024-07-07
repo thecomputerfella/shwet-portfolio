@@ -17,7 +17,7 @@ header{
 }
 header.scrolled{
     border-bottom: 0.5px solid #eeeeee29;
-    
+
     /* From https://css.glass */
     background: rgba(62, 62, 62, 0.434);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -69,16 +69,62 @@ nav{
 @media screen and (max-width: 905px){
 
 
-    .burger{
+    /* .burger{
         top:40px;
         right: 40px;
-        position: absolute;
+        position: fixed;
         z-index: 100000;
     }
     .burger div{
         width: 25px;
         height: 3px;
-        background: #777777;
+        background: white;
+        margin: 5px;
+    }
+
+    .logo{
+        display: none;
+    }     */
+
+    .nav_links a{
+        /* color: white; */
+        /* display: flex; */
+        /* padding: 20px; */
+        text-align: center;
+        width: fit-content;
+        margin: 10px;
+    }
+    .nav_links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;
+        /* border: 2px solid salmon; */
+    }
+    
+    header{
+        /* border: 2px solid red; */
+        /* background: #777777; */
+        /* height: 100vh; */
+        /* width: 100%; */
+        /* position: fixed; */
+        /* display: ; */
+    }
+
+}
+/* @media screen and (max-width: 905px){
+
+
+    .burger{
+        top:40px;
+        right: 40px;
+        position: fixed;
+        z-index: 100000;
+    }
+    .burger div{
+        width: 25px;
+        height: 3px;
+        background: white;
         margin: 5px;
     }
 
@@ -90,7 +136,6 @@ nav{
         color: white;
         display: flex;
         padding: 20px;
-        
         
     }
     .nav_links{
@@ -107,11 +152,15 @@ nav{
     
     header{
         border: 2px solid red;
-        background: #777777;
+        /* background: #777777; */
+        background: rgba(62, 62, 62, 0.434);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(50px);
+        -webkit-backdrop-filter: blur(2.2px);
         height: 100vh;
         width: 100%;
         position: fixed;
-        display: none;
+        /* display: ; */
     }
 
-}
+} */

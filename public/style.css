@@ -150,7 +150,7 @@ body{
     border-radius: 1em;
 }
 .my-works{
-    /* to overflow the main-cta button shadow effect on hover */
+    /* to overflow the project cards from their parent div upon hover */
     overflow: visible;
     /* border: 2px solid red; */
 }
@@ -159,16 +159,13 @@ body{
     margin-bottom: 6em;
 }
 .project-cards{
-    /* to overflow the main-cta button shadow effect on hover */
-    /* overflow: visible; */
+    overflow: visible;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
 }
 .project-card{
-    /* border: 2px solid slateblue; */
-    overflow: visible !important;
     width: 55em;
     display: flex;
     justify-content: space-between;
@@ -180,7 +177,7 @@ body{
     padding: 2em;
     border-radius: 1em;
 }
-/* .project-card:hover{
+.project-card:hover{
     transition: transform 300ms ease-in-out;
     transform: scale(110%);
     background: rgba(255, 255, 255, 0.11);
@@ -188,13 +185,16 @@ body{
     -webkit-backdrop-filter: blur(2.2px);
     padding: 2em;
     border-radius: 1em;
-} */
+}
 .project-card-left{
     /* border: 2px solid seagreen; */
     display: flex;
     flex-direction: column;
     /* justify-content: space-evenly; */
     text-align: left;
+
+    /* to overflow the main-cta button shadow effect on hover */
+    overflow: visible !important;
 }
 .project-details{
     width: 30em;
@@ -279,7 +279,7 @@ footer{
     margin-left: 1em;
 }
 
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 820px) {
     div.project-card{
         width: 20em;
     }
@@ -297,7 +297,13 @@ footer{
         width: 100%;
         justify-content: center;
     }
-    div.project-img1, div.project-img2{
+    div.project-img1, div.project-img2, div.project-img3{
         margin-top: 2em;
+    }
+    div.card-buttons{
+        display: block;
+    }
+    p.sub-heading{
+        width: 19em !important;
     }
   }
