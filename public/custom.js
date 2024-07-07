@@ -13,7 +13,7 @@
 // });
 
 function openLogin(url){
-    document.getElementById("metvy-video").src = url;
+    document.querySelector('iframe.metvy-video').src = url;
     document.getElementById("login-modal").style.display = "flex";
     document.getElementById("modal-content").style.display = "flex";
     // document.getElementById("signup-modal").style.display = "none";
@@ -25,8 +25,7 @@ function closeModal(){
     console.log("close tap");
     document.getElementById("login-modal").style.display = "none";
     document.getElementById("modal-content").style.display = "none";
-    event.preventDefault();
-    document.getElementById("metvy-video").src = "";
+    document.querySelector('iframe.metvy-video').src = "url";
     // document.getElementById("signup-modal").style.display = "none";
     // document.getElementById("success-modal").style.display = "none";
     // event.preventDefault();
@@ -42,3 +41,19 @@ document.addEventListener('scroll', ()=> {
         header.classList.remove('scrolled');
     }
 })
+
+// const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+// if (!isMobile) {
+//   /* your code here */
+//     let child = document.querySelector(".timeline-date");
+//     let parent = document.querySelector(".timeline-content");
+
+//     parent.appendChild(child);
+// }
+// if(window.innerWidth <=800 ){
+//     let child = document.querySelector(".timeline-date");
+//     let parent = document.querySelector(".timeline-content");
+
+//     parent.appendChild(child);
+// }

@@ -7,6 +7,9 @@
 
     /* for smooth scroll transition from any intra anchor link */
     scroll-behavior: smooth; 
+    
+    /* to make all texts in the entire website in lowercase */
+    text-transform: lowercase;
 }
 body{
     min-width: 375px;
@@ -278,7 +281,7 @@ footer{
 .location div{
     margin-left: 1em;
 }
-
+/* MOBILE VIEW CSS */
 @media only screen and (max-width: 820px) {
     div.project-card{
         width: 20em;
@@ -287,7 +290,7 @@ footer{
         justify-content: center;
     }
     div.card-container{
-        width: 22em;   
+        width: 20em;   
         height: auto;        
     }
     div.project-details{
@@ -303,7 +306,15 @@ footer{
     div.card-buttons{
         display: block;
     }
-    p.sub-heading{
+    /* hero section, contact section sub heading */
+    p.sub-heading, p.contact-sub-text, div.footer-center{
         width: 19em !important;
+        text-align: center;
     }
+    footer{
+        height: 15em;
+        flex-direction: column;
+        align-items: center;
+    }
+
   }

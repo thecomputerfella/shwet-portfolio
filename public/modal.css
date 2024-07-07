@@ -6,37 +6,13 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    color: #777777;
-    font-size: 1.4rem;
-}
-#signup-modal{
-    z-index: 2000;
-    height: 100%;
-    width: 100%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    color: #777777;
-    font-size: 1.4rem;
-}
-#success-modal{
-    z-index: 2000;
-    height: 100%;
-    width: 100%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.4); 
     color: #777777;
     font-size: 1.4rem;
 }
 #modal-content{
-    /* height: 360px;
-    width: 340px; */
+    /* height: 360px; */
+    width: 1000px;
     height: fit-content;
     width: fit-content;
     background-color:white;
@@ -46,7 +22,31 @@
     /* padding: 20px;
     padding: 0px 20px ; */
 }
-#signup-modal-content{
+/* #signup-modal{
+    z-index: 2000;
+    height: 100%;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0,0,0,0.4); 
+    color: #777777;
+    font-size: 1.4rem;
+} */
+/* #success-modal{
+    z-index: 2000;
+    height: 100%;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0,0,0,0.4); 
+    color: #777777;
+    font-size: 1.4rem;
+} */
+/* #signup-modal-content{
 
     height: 540px;
     width: 340px;
@@ -65,7 +65,7 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
-}
+} */
 #close-div{
     display: flex;
     justify-content: flex-end;
@@ -129,4 +129,10 @@
     color: darkslategray;
     font-weight: 800;
     cursor: pointer;
+}
+@media only screen and (max-width: 820px) {
+    iframe.metvy-video{
+        width: 95vw;
+        height: 200px;
+    }
 }

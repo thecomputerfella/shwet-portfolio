@@ -1,0 +1,150 @@
+.timeline-cards{
+    margin-top: 5em;
+}
+.timeline-card{
+    /* border: 2px solid red; */
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+ .timeline-date{
+    /* border: 1px solid violet; */
+    height: fit-content;
+    width: 7em;
+    text-align: right;
+ }
+ .timeline-date-mobile{
+    display: none;
+ }
+.dot-line{
+    display: flex;
+    flex-direction: column;
+    margin: 0em 1em 0em 1em;
+    /* border: 1px solid salmon; */
+}
+.dot{
+    height: 10px;
+    width: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+}
+.line{
+    border-left: 0.5px solid rgb(105, 105, 105);
+    height: 100%;
+    margin-left: 0.25em;
+}
+.timeline-content{
+    width: 25em;
+    margin-bottom: 5em;
+    overflow: visible;
+    /* border: 1px solid aqua; */
+}
+/* .timeline-content > *{
+    margin-bottom: 1em;
+} */
+ .timeline-tag{
+    padding: 0.5em;
+    /* border: 1px solid white; */
+    border-radius: 0.5em;
+    width: fit-content;
+    margin-bottom: 1em;
+    font-size: small;
+    /* background-color: white; */
+    background-color: #4F5AD8;
+    color: white;
+ }
+.achievement-heading{
+    font-size: large;
+    font-weight:600;
+    margin-bottom: 0.5em;
+}
+.achievement-desc{
+    font-weight: lighter;
+    color: #D0D0D0;
+}
+
+.achievement-cta{
+    /* margin-bottom: -1em; */
+    font-weight: lighter;
+    width: fit-content;
+    /* height: auto; */
+    margin-top: 1.5em;
+    font-size: 1em;
+    background: none;
+    padding: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 5em;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.achievement-cta:hover{
+    background-color: #4F5AD8;
+    border: 1px solid #4F5AD8;
+    -webkit-box-shadow: 0px 6px 41px 0px rgba(79,90,216,0.793);
+    -moz-box-shadow: 0px 6px 41px 0px rgba(79,90,216,0.793);
+    box-shadow: 0px 6px 41px 0px rgba(79, 90, 216, 0.793);
+}
+
+/* TIMELINE IMAGES */
+.time-img-01{
+    margin-top: 1em;
+    height: 12em;
+    background-image: url(https://scontent.fdel10-1.fna.fbcdn.net/v/t31.18172-8/16462969_2239935352898265_7113708190319718981_o.jpg?_nc_cat=108&ccb=1-7&_nc_sid=13d280&_nc_ohc=h0FevSbLPvsQ7kNvgH2A7-l&_nc_ht=scontent.fdel10-1.fna&oh=00_AYDjL8Ey71CEuQeifBgQddniJOI18BJ8wzaa-O7JEpkTkg&oe=66B241CC);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    border-radius: 1em;
+}
+.time-img-sih2024{
+    margin-top: 1em;
+    height: 12em;
+    background-image: url(https://media.licdn.com/dms/image/C4D22AQFTimolkS1IxQ/feedshare-shrink_2048_1536/0/1661618559833?e=1723075200&v=beta&t=sVnGuL00VorKJRcPy8imyEoTu2lu-alYgOs6Zb67uUE);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    border-radius: 1em;
+}
+.time-img-designhub{
+    margin-top: 1em;
+    height: 12em;
+    background-image: url(https://media.licdn.com/dms/image/D5622AQEoZkSPJX3bMA/feedshare-shrink_800/0/1710689554238?e=1723075200&v=beta&t=Ev0xIadwTv0IGlxB_dQbDBRojLuZidQOtnaHrtQrNA8);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 1em;
+}
+.time-img-bmljudge{
+    margin-top: 1em;
+    height: 12em;
+    background-image: url(https://media.licdn.com/dms/image/D5622AQE8NIEL0GOX7w/feedshare-shrink_1280/0/1709572447269?e=1723075200&v=beta&t=_0PFjhYtjtD6tqrLbR7nMVEILbgdoystpx0xd1CilzM);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 1em;
+}
+.time-img-bmlspeaker{
+    margin-top: 1em;
+    height: 12em;
+    background-image: url(https://media.licdn.com/dms/image/D5622AQGK-6Mt8MQPlw/feedshare-shrink_1280/0/1713873417025?e=1723075200&v=beta&t=77vi0HeHuEiThFmXazjGsoDpisL7VByOYunOgVGwPB0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 1em;
+}
+
+/* MOBILE VIEW CSS */
+@media only screen and (max-width: 820px) {
+    div.timeline-date{
+        display: none;
+    }
+    div.timeline-date-mobile{
+        display: block;
+        margin-bottom: 1em;
+    }
+    div.timeline-content{
+        width: 19em;
+    }
+}
