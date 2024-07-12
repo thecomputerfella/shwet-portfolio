@@ -108,7 +108,14 @@
                         <div class="left-content">
                             After analyzing the survey, we divided our target users into 3 Primary categories: Working Professionals, College students, and School-going students. For each category, we had a conversation with multiple individuals and collectively created the following User Personas.
                         </div>
-                        <img class="full-width-img" src="https://cdn.prod.website-files.com/64aa9cbef13faa192f548052/65e2d197140209a7c2893ea4_Group%2013917.png" alt="">
+                        <div class="three-tabs">
+                            <div id="tab-selected" class="tab1" onclick="switchPersona1()">Working Professionals</div>
+                            <div class="tab2" onclick="switchPersona2()">College Students</div>
+                            <div class="tab3" onclick="switchPersona3()">School Students</div>
+                        </div>
+                        <img id="persona1" class="full-width-img" src="https://cdn.prod.website-files.com/64aa9cbef13faa192f548052/65e2d197140209a7c2893ea4_Group%2013917.png" alt="">
+                        <img id="persona2" class="full-width-img" src="https://cdn.prod.website-files.com/64aa9cbef13faa192f548052/65e2d197bb56a777f0853551_Group%2013918.png" alt="">
+                        <img id="persona3" class="full-width-img" src="https://cdn.prod.website-files.com/64aa9cbef13faa192f548052/65e2d197140209a7c2893e93_Group%2013919.png" alt="">
                     </div>
                     <!-- COMPETITIVE ANALYSIS -->
                     <div class="comp-analysis">
@@ -170,11 +177,37 @@
                         <div class="left-content">
                             After the completion of low-fidelity wireframes, we organized feedback sessions with multiple users and noted down the problems that they faced while navigating through the low-fidelity test prototype. We curated all the problems and rectified the the ones that will reduce the pain points and improve the flow of the application.
                         </div>
-                        <div class="survey-imgs">
-                            <img class="survey-img" src="https://cdn.prod.website-files.com/64aa9cbef13faa192f548052/64aa9cbef13faa192f5480f9_Feedback%201.png" alt="">
-                            <img class="survey-img" src="https://cdn.prod.website-files.com/64aa9cbef13faa192f548052/64aa9cbef13faa192f548129_Rectification%201.png" alt="">
+                        <div class="three-tabs">
+                            <div id="tab-selected" class="feedback-tab1" onclick="switchFeedback1()">Journal segregation</div>
+                            <div class="feedback-tab2" onclick="switchFeedback2()">Shifting Journal page</div>
+                            <div class="feedback-tab3" onclick="switchFeedback3()">Adding Notifications</div>
                         </div>
-                        <img class="full-width-img" src="https://cdn.prod.website-files.com/64aa9cbef13faa192f548052/64aa9cbef13faa192f5480fb_Before%20After%201.1.png" alt="">
+                        <!-- FEEDBACK 1 -->
+                         <div id="feedback1">
+                            <div style="background-color: white; border-radius: 1em; margin-bottom: 1em;" class="survey-imgs">
+                                <img class="survey-img" src="https://cdn.prod.website-files.com/64aa9cbef13faa192f548052/64aa9cbef13faa192f5480f9_Feedback%201.png" alt="">
+                                <img class="survey-img" src="https://cdn.prod.website-files.com/64aa9cbef13faa192f548052/64aa9cbef13faa192f548129_Rectification%201.png" alt="">
+                            </div>
+                            <img class="full-width-img" src="https://cdn.prod.website-files.com/64aa9cbef13faa192f548052/64aa9cbef13faa192f5480fb_Before%20After%201.1.png" alt="">
+                        </div>
+
+                        <!-- FEEDBACK 2 -->
+                        <div id="feedback2">
+                            <div style="background-color: white; border-radius: 1em; margin-bottom: 1em;" class="survey-imgs">
+                                <img class="survey-img" src="https://cdn.prod.website-files.com/64aa9cbef13faa192f548052/64aa9cbef13faa192f5480f2_Feedback%25202-p-1080.png" alt="">
+                                <img class="survey-img" src="https://cdn.prod.website-files.com/64aa9cbef13faa192f548052/64aa9cbef13faa192f5480f4_Rectification%202.png" alt="">
+                            </div>
+                            <img class="full-width-img" src="https://cdn.prod.website-files.com/64aa9cbef13faa192f548052/64aa9cbef13faa192f5480f5_Before%2520After%25202-p-2600.png" alt="">
+                        </div>
+                        
+                        <!-- FEEDBACK 3 -->
+                        <div id="feedback3">
+                        <div style="background-color: white; border-radius: 1em; margin-bottom: 1em;" class="survey-imgs">
+                            <img class="survey-img" src="https://cdn.prod.website-files.com/64aa9cbef13faa192f548052/64aa9cbef13faa192f5480f6_Feedback%203.png" alt="">
+                            <img class="survey-img" src="https://cdn.prod.website-files.com/64aa9cbef13faa192f548052/64aa9cbef13faa192f5480f7_Rectification%25203-p-1080.png" alt="">
+                        </div>
+                        <img class="full-width-img" src="https://cdn.prod.website-files.com/64aa9cbef13faa192f548052/64aa9cbef13faa192f5480f8_Before%2520After%25203-p-2600.png" alt="">
+                        </div>
                     </div>
                     <!-- STYLE GUIDE -->
                     <div class="whiteboarding">
@@ -183,7 +216,7 @@
                             The aesthetics of the application were going to play a very important role in making things get done by the user. So our first instinct was to select a color that provides a sense of growth, health, and success. Eventually, we chose several variations of green color and finally decided to go with "Munsell Green". For the font, we wanted one that gives a friendly feel to use and we chose "Rubik".
                         </div>
                         <img class="full-width-img" src="https://cdn.prod.website-files.com/64aa9cbef13faa192f548052/64aa9cbef13faa192f5480e8_Style%20Guide%201.png" alt="">
-                        <img class="full-width-img" src="https://cdn.prod.website-files.com/64aa9cbef13faa192f548052/64aa9cbef13faa192f5480e9_Style%20Guide%202.png" alt="">
+                        <img style="margin-top: 2em;" class="full-width-img" src="https://cdn.prod.website-files.com/64aa9cbef13faa192f548052/64aa9cbef13faa192f5480e9_Style%20Guide%202.png" alt="">
                     </div>
                     <!-- HIGH FIDELITY -->
                     <div class="whiteboarding">

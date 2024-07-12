@@ -42,6 +42,62 @@ document.addEventListener('scroll', ()=> {
     }
 })
 
+
+// for dynamically switching tabs in user persona section
+function switchPersona1(){
+    document.getElementById("persona1").style.display = "block";
+    document.getElementById("persona2").style.display = "none";
+    document.getElementById("persona3").style.display = "none";
+    document.querySelector(".tab1").setAttribute('id', "tab-selected");
+    document.querySelector(".tab2").removeAttribute('id', "tab-selected");
+    document.querySelector(".tab3").removeAttribute('id', "tab-selected");
+
+}
+function switchPersona2(){
+    document.getElementById("persona1").style.display = "none";
+    document.getElementById("persona2").style.display = "block";
+    document.getElementById("persona3").style.display = "none";
+    document.querySelector(".tab2").setAttribute('id', "tab-selected");
+    document.querySelector(".tab1").removeAttribute('id', "tab-selected");
+    document.querySelector(".tab3").removeAttribute('id', "tab-selected");
+}
+function switchPersona3(){
+    document.getElementById("persona1").style.display = "none";
+    document.getElementById("persona2").style.display = "none";
+    document.getElementById("persona3").style.display = "block";
+    document.querySelector(".tab3").setAttribute('id', "tab-selected");
+    document.querySelector(".tab1").removeAttribute('id', "tab-selected");
+    document.querySelector(".tab2").removeAttribute('id', "tab-selected");
+    
+}
+
+// for dynamically switching tabs in user feedback section
+function switchFeedback1(){
+    document.getElementById("feedback1").style.display = "block";
+    document.getElementById("feedback2").style.display = "none";
+    document.getElementById("feedback3").style.display = "none";
+    document.querySelector(".feedback-tab1").setAttribute('id', "tab-selected");
+    document.querySelector(".feedback-tab2").removeAttribute('id', "tab-selected");
+    document.querySelector(".feedback-tab3").removeAttribute('id', "tab-selected");
+
+}
+function switchFeedback2(){
+    document.getElementById("feedback1").style.display = "none";
+    document.getElementById("feedback2").style.display = "block";
+    document.getElementById("feedback3").style.display = "none";
+    document.querySelector(".feedback-tab2").setAttribute('id', "tab-selected");
+    document.querySelector(".feedback-tab1").removeAttribute('id', "tab-selected");
+    document.querySelector(".feedback-tab3").removeAttribute('id', "tab-selected");
+}
+function switchFeedback3(){
+    document.getElementById("feedback1").style.display = "none";
+    document.getElementById("feedback2").style.display = "none";
+    document.getElementById("feedback3").style.display = "block";
+    document.querySelector(".feedback-tab3").setAttribute('id', "tab-selected");
+    document.querySelector(".feedback-tab1").removeAttribute('id', "tab-selected");
+    document.querySelector(".feedback-tab2").removeAttribute('id', "tab-selected");
+    
+}
 // const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
 // if (!isMobile) {

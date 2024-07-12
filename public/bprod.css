@@ -89,6 +89,46 @@
     margin-top: 3em;
     max-width: 68.3em;
 }
+
+/* THREE SEGMENT TABS FOR USER PERSONA & USER FEEDBACK */
+.three-tabs{
+    display: flex;
+    margin-bottom: 1em;
+}
+.tab1, .tab2, .tab3{
+    border: 1px solid white;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 0.6em;
+    cursor: pointer;
+    margin-right: 0.7em;
+}
+.tab1:hover, .tab3:hover, .tab2:hover{
+    background-color: #4F5AD8;
+}
+.feedback-tab1, .feedback-tab2, .feedback-tab3{
+    border: 1px solid white;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 0.6em;
+    cursor: pointer;
+    margin-right: 0.7em;
+}
+.feedback-tab1:hover, .feedback-tab3:hover, .feedback-tab2:hover{
+    background-color: #4F5AD8;
+}
+#tab-selected{
+    background-color: #4F5AD8;
+    border: none;
+}
+#persona2, #persona3{
+    display: none;
+}
+#feedback2, #feedback3{
+    display: none;
+}
+
+/* -------------------------------------------------------- */
+
+
 .figma-iframe-container{
     height: 47em;
     width: 30em;
