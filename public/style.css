@@ -16,6 +16,7 @@ body{
     background-image: url(./v2Imgs/dark-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top;
 }
 .container{
     width: 100%;
