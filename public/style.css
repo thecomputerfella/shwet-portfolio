@@ -224,6 +224,39 @@ body{
     background-size: 170%;
     border-radius: 1em;
 }
+.project-msigma{
+    /* border: 2px solid aqua; */
+    width: 20em;
+    height: 12em;
+    background-image: url(./v2Imgs/msigma-thumb.png);
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1em;
+}
+.project-aaveg{
+    /* border: 2px solid aqua; */
+    width: 20em;
+    height: 12em;
+    background-image: url(./v2Imgs/aaveg-thumb.png);
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1em;
+}
+.project-wiseias{
+    /* border: 2px solid aqua; */
+    width: 20em;
+    height: 12em;
+    background-image: url(./v2Imgs/wiseias-thumb.png);
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1em;
+}
 .project-img2{
     /* border: 2px solid aqua; */
     width: 20em;
