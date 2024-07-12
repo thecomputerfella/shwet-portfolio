@@ -161,6 +161,42 @@
     background-position: top;
     border-radius: 1em;
 }
+.time-img-hackrx2{
+    margin-top: 1em;
+    height: 12em;
+    background-image: url(https://media.licdn.com/dms/image/C4E22AQGQ5dks_qg2SA/feedshare-shrink_1280/0/1627210645129?e=1723680000&v=beta&t=qrxAXvzDk9mW5-GfjRHxvzLlWMnj7nSsYt98E9rfpPU);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    border-radius: 1em;
+}
+.time-img-hackrx1{
+    margin-top: 1em;
+    height: 12em;
+    background-image: url(https://media.licdn.com/dms/image/C4E22AQHARcK06w-xHg/feedshare-shrink_1280/0/1592070248734?e=1723680000&v=beta&t=jSBjBPSzO6rQA2vJ3ZeC4-CS49OgSz7lA1yUwDHT1C8);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    border-radius: 1em;
+}
+.time-img-hackoverflow{
+    margin-top: 1em;
+    height: 12em;
+    background-image: url(https://media.licdn.com/dms/image/C5122AQEhaxswfHOlpA/feedshare-shrink_2048_1536/0/1583839578482?e=1723680000&v=beta&t=_3RCT7M0IceyOIS_ZfJneF-rL0B7EeDa6kT101b_es0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    border-radius: 1em;
+}
+.time-img-webinar{
+    margin-top: 1em;
+    height: 12em;
+    background-image: url(https://media.licdn.com/dms/image/C5622AQGAUA4fv4SyCg/feedshare-shrink_1280/0/1589041970635?e=1723680000&v=beta&t=2P90lZRNwCdpF877Ky0_pDcuKtlxnE31jaJCfyoylGE);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 1em;
+}
 
 /* MOBILE VIEW CSS */
 @media only screen and (max-width: 820px) {
